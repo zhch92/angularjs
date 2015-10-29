@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo4</title>
+    <script src="js/angular.js"></script>
+</head>
+
+<body>
+    <!-- <div ng-app="">
+	<p>请输入 <input type="text" ng-model="names"></p>
+		<p ng-bind="names"></p>
+		<p>{{5+5}}</p>
+	</div> -->
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+	<p>姓<input type="text" ng-model="names"></p>
+	<p>名<input type="text" ng-model="namess"></p>
+	<p>{{names+'-----'+namess}}</p>
+	</div> -->
+    <!-- 	<div ng-app='' ng-init='xx=5;yy=6'>
+		<p>{{xx*yy}}</p>
+
+	</div> -->
+    <!-- <div ng-app='' ng-init='xx=5;yy=6'>
+  	<p>测试测试才三次是测试测试</p>
+		<p ng-bind="xx*yy"></p>
+
+	</div> -->
+    <!-- <div ng-app='' ng-init='namess="nmaessss"'> 
+<p>输入你的名字</p>
+<p><input type="text" ng-model="namess"></p>
+<p>你输入的是<span>{{namess}}</span></p>
+</div> -->
+    <!-- <div ng-app='' ng-init='namess=[0,1,2,3,4,5]'>
+        <ul>
+        	<li ng-repeat="x in namess">{{x}}</li>
+        </ul>
+    </div> -->
+<!--     <div ng-app='' ng-init="namess=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+        <ul>
+        	<li ng-repeat="x in namess">{{x.name+"----"+x.country}}</li>
+        </ul>
+    </div> -->
+        <div ng-app='' ng-init="namess=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+        <table border="1"  cellspacing="0">
+        	<tr ng-repeat="x in namess">
+        		<td>{{x.name}}</td>
+        		<td>{{x.country}}</td>
+        	</tr>
+        </table>
+    </div>
+    <script>
+    // var app=angular.module("myApp",[]);
+    // app.controller("myCtrl",function($scope){
+    // 	$scope.names="xx";
+    // 	$scope.namess="yy";
+    // })
+    </script>
+</body>
+
+</html>
